@@ -5,6 +5,9 @@ Pseudorandom number generator abbreviated as PRNG is an algorithm, which, by mea
 
 To assess the quality of the generator, we subject it to various tests. Generator tests allow you to pre-determine whether the generated values are pseudorandom. All of them ultimately return p-values, thanks to which we can assess whether the generated string is actually random.
 
+Each test returns a p-value. If it is very close to 0 or 1 (let's say < 0.0001 | > 0.9999) we can assume that this generator is not good. However, there is a chance that this value will be reached and the generator is good. Therefore, for this purpose, we use second level testing, which consists in re-testing many returned p-values.
+
+
 ## Content
 Repository contains:
 
@@ -16,6 +19,6 @@ Repository contains:
 
 
 # Usage
-You can find usage of every program in ```docs``` directory.
+You can find usage of every program in ```docs``` directory or by typing ```-h``` in console for help.
 
 
