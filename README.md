@@ -1,2 +1,3 @@
 # PRNG-testing
-Testing pseudo-random number generators using test described at NIST book.
+
+This projects is testing pseudo-random number generators
